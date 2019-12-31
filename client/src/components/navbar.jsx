@@ -10,7 +10,7 @@ class Navbar extends Component {
   componentDidMount() {
     $(window).scroll(function() {
       var nav = $('#navbarr');
-      var top = 200;
+      var top = 100;
       if ($(window).scrollTop() >= top) {
         nav.addClass('down');
       } else {

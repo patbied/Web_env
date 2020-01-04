@@ -1,0 +1,9 @@
+$navy: rgb(15, 57, 103);
+
+.pagination {
+  background-color: lighten($navy, 50%);
+  .paginationButtons {
+    margin: 10px;
+    background-color: white;
+  }
+}

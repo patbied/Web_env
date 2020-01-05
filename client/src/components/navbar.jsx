@@ -21,7 +21,10 @@ class Navbar extends Component {
 
   render() {
     return (
-      <nav id="navbarr" className="navbar sticky-top navbar-expand-sm ">
+      <nav
+        id="navbarr"
+        className="navbar sticky-top navbar-expand-sm navbar-inverse bg-inverse "
+      >
         <NavLink to="/" class="navbar-brand">
           Web_Env
         </NavLink>
@@ -29,7 +32,7 @@ class Navbar extends Component {
           class="navbar-toggler"
           type="button"
           data-toggle="collapse"
-          data-target="#navbarSupportedContent"
+          data-target="#navbarNavDropdown"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"

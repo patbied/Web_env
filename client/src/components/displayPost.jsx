@@ -31,7 +31,6 @@ const DisplayPost = () => {
       <Container>
         <div className="postTitles">
           <h1>Newest Posts</h1>
-          <h2>Page {Pagination.number}</h2>
         </div>
         <Posts posts={currentPosts} loading={loading} />
 

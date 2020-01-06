@@ -1,16 +1,20 @@
 import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Accordion, Card, Container, Col, Row } from 'react-bootstrap';
-
+import Spinner from 'react-bootstrap/Spinner';
 const Posts = ({ posts, loading }) => {
   if (loading) {
-    return <h2>Loading..</h2>;
+    return (
+      <Container className="">
+        <Spinner animation="grow" variant="light" />
+      </Container>
+    );
   }
 
   return (
     <div>
       {posts.map(p => (
-        <Accordion className="cardWhole">
+        <Accordion className="cardWhole animate-bottom">
           <Card>
             <Accordion.Toggle
               as={Card.Header}

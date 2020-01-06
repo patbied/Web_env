@@ -18,7 +18,7 @@ $niceGreen: #017558;
 .navbar-brand {
   color: white;
   font-weight: bold;
-  font-size: 2em;
+  font-size: 3em !important;
 }
 .navbar-brand:hover {
   color: white !important;
@@ -36,7 +36,7 @@ $niceGreen: #017558;
   text-decoration: none !important;
 }
 .nav-link:hover {
-  color: darken(white, 10%);
+  color: white;
   transform: scale(1.1);
   text-decoration: none !important;
 }

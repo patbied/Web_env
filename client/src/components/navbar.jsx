@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import '../css/nav.scss';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import 'react-bootstrap';
 import $ from 'jquery';
 
@@ -43,9 +43,13 @@ class Navbar extends Component {
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <NavLink
+                to="/createPost"
+                className="nav-link"
+                activeClassName="nav-link--active"
+              >
                 Create post
-              </a>
+              </NavLink>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">

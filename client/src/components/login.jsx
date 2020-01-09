@@ -10,9 +10,9 @@ class loginPage extends Component {
           <h1 className="formTitle">Login</h1>
           <form>
             <div class="formGroup">
-              <label for="username">Username</label>
+              <label for="username">Email</label>
               <br></br>
-              <input className="formForm" type="text" id="username"></input>
+              <input className="formForm" type="text" id="email"></input>
             </div>
             <div class="formGroup">
               <label for="password">Password</label>

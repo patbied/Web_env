@@ -4,39 +4,33 @@ $gray: rgb(218, 216, 216);
 $navy: rgb(15, 57, 103);
 $niceGreen: #017558;
 .navbar {
-  background-color: transparent;
+  background-color: white;
   transition: 100ms;
   height: 100px;
   font-size: 100%;
 }
-#navbarr.down {
-  background-color: lighten($navy, 50%) !important;
-  height: 70px;
-  transition: 100ms;
-  font-size: 80%;
-}
 .navbar-brand {
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 3em !important;
 }
 .navbar-brand:hover {
-  color: white !important;
+  color: black !important;
 }
 .nav-link {
-  color: white;
+  color: black;
   font-size: 1.5em;
   transition: 200ms;
   margin: 5px;
 }
 .nav-link--active {
-  color: darken(white, 10%);
+  color: black;
   transform: scale(1.1);
   font-weight: 10px;
   text-decoration: none !important;
 }
 .nav-link:hover {
-  color: white;
+  color: black;
   transform: scale(1.1);
   text-decoration: none !important;
 }

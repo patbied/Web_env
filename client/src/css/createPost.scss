@@ -1,0 +1,72 @@
+$gray: rgb(218, 216, 216);
+$navy: rgb(15, 57, 103);
+.createPostTitle {
+  color: black;
+}
+.createPostBox {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid black;
+  .createPostInput {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    border-radius: 2px 2px 2px 2px;
+    outline-color: transparent;
+    outline-style: none;
+    background-color: $gray;
+    width: 80%;
+    margin-bottom: 1em;
+    transition: 200ms background-color;
+  }
+}
+
+.createPostInput:focus {
+  outline-color: transparent;
+  outline-style: none;
+  box-shadow: 0 0 10px lighten($navy, 50%);
+  border: 3px solid lighten($navy, 50%) !important;
+  background-color: white;
+  transition: 200ms background-color;
+}
+
+.createPostButton {
+  background-color: $navy;
+  color: $gray;
+  height: 40px;
+  width: 100px;
+  transition: 200ms;
+}
+.createPostButton:hover {
+  background-color: lighten($navy, 40%);
+  color: white;
+  transition: 200ms;
+}
+.createPostButton span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.createPostButton span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.createPostButton:hover span {
+  padding-right: 25px;
+}
+
+.createPostButton:hover span:after {
+  opacity: 1;
+  right: 0;
+}

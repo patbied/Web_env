@@ -7,8 +7,7 @@ const PostSchema = mongoose.Schema(
       required: true
     },
     author: {
-      type: String,
-      required: true
+      type: String
     },
     postDate: {
       type: Date,

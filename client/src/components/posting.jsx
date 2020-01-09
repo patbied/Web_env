@@ -2,6 +2,7 @@ import React from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import { Accordion, Card, Container, Col, Row } from 'react-bootstrap';
 import Spinner from 'react-bootstrap/Spinner';
+import Moment from 'react-moment';
 const Posts = ({ posts, loading }) => {
   if (loading) {
     return (
@@ -26,7 +27,11 @@ const Posts = ({ posts, loading }) => {
                 <Row>
                   <Col sm={8}>
                     <h1>
-                      {p.title} - <span>Published {p.postDate}</span>
+                      {p.title} -{' '}
+                      <span>
+                        Published{' '}
+                        <Moment format="YYYY/MM/DD HH:mm">{p.postDate}</Moment>
+                      </span>
                     </h1>
                     <h3>By {p.author}</h3>
                     <div class="postTags d-sm-none d-none d-md-none d-lg-block">

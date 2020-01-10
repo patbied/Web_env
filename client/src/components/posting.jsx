@@ -7,7 +7,7 @@ const Posts = ({ posts, loading }) => {
   if (loading) {
     return (
       <Container className="">
-        <Spinner animation="grow" variant="light" />
+        <Spinner animation="grow" variant="primary" />
       </Container>
     );
   }
@@ -27,10 +27,9 @@ const Posts = ({ posts, loading }) => {
                 <Row>
                   <Col sm={8}>
                     <h1>
-                      {p.title} -{' '}
+                      {p.title}{' '}
                       <span>
-                        Published{' '}
-                        <Moment format="YYYY/MM/DD HH:mm">{p.postDate}</Moment>
+                        Posted <Moment fromNow>{p.postDate}</Moment>
                       </span>
                     </h1>
                     <h3>By {p.author}</h3>
